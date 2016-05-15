@@ -1,0 +1,56 @@
+% preamble contains title page, signature page, acknowledgment and abstract texts
+\include{preamble}
+
+% Pacakges used
+\usepackage[sort]{natbib}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{cleveref}
+\usepackage{sectsty}
+\usepackage{tocstyle}
+
+\begin{document}
+
+\hypersetup{breaklinks=true}
+
+ % Start page counting in roman numerals
+ \frontmatter
+
+ % This command makes the formal preliminary pages.
+ % You can comment it out during the drafting process if you want to save paper.
+\doublespace
+ \makepreliminarypages
+
+
+ % Make the table of contents.
+\addtocontents{toc}{~\hfill{Page}\par} 
+ \tableofcontents
+ \thispagestyle{plain}
+
+ % Make the list of figures
+\addtocontents{lof}{~\hfill{Page}\par} 
+ \listoffigures
+ \thispagestyle{plain}
+
+\addtocontents{lot}{~\hfill{Page}\par} 
+ \listoftables
+ \clearemptydoublepage
+
+ % Start regular page counting at page 1
+ \mainmatter
+
+% OK. Everything is set up. Type your thesis here.
+\include{maintext}
+
+% Bibliography
+\bibliographystyle{apalike}
+\begingroup
+    \setlength{\bibsep}{10pt}
+    \linespread{1}\selectfont
+    \bibliography{bib}
+\endgroup
+
+% Appendices
+\include{app}
+
+\end{document}
