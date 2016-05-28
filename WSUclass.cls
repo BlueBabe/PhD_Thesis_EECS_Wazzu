@@ -370,14 +370,21 @@
     By\\[\baselineskip]
     \MakeUppercase{\@Author} 
     \vfill
+    \begin{singlespace} 
     A \@docname~submitted in partial fulfillment of\\
     the requirements for the degree of\\[\baselineskip]
+    \end{singlespace} 
     \MakeUppercase{\@degree} \\[3\baselineskip]
+    \begin{singlespace} 
     \MakeUppercase{\@University}\\
     \@Department\\[\baselineskip]
+    \end{singlespace} 
     \MakeUppercase{\@Month}~\@Year \\[\baselineskip]
+    \vspace*{\fill}
+    \begin{singlespace} 
     \copyright\ Copyright by \MakeUppercase{\@Author},~\@Year\\
-    All Rights Reserved
+    All Rights Reserved\\[\baselineskip]
+    \end{singlespace} 
     \end{center}
     \clearpage
     }
@@ -419,8 +426,10 @@
     \vspace*{\fill}
     \vfill
     \begin{center}
+    \begin{singlespace} 
     \copyright\ Copyright by \MakeUppercase{\@Author},~\@Year\\
-    All Rights Reserved
+    All Rights Reserved\\[\baselineskip]
+    \end{singlespace} 
     \end{center}
 %    \vspace{1in}
     \clearpage
